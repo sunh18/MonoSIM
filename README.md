@@ -9,4 +9,6 @@ This repository was used to train and evaluate the MonoSIM monocular detector on
 # Usage
 
 This repo is tested on our local environment (python=3.6.13, cuda=10.2, pytorch=1.7.1), and we recommend you to use anaconda to create a vitural environment:
-    conda create -n monosim python=3.6.13
+···
+conda create -n monosim python=3.6.13
+···
