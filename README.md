@@ -24,12 +24,12 @@ conda install -c fvcore -c iopath -c conda-forge fvcore iopath
 conda install -c bottler nvidiacub
 conda install numpy==1.19.5
 ```
-  Here we suggest installing Python3D locally (provided by MonoSIM) to avoid version errors:
+> Here we suggest installing Python3D locally (provided by MonoSIM) to avoid version errors:
 ```
 conda install pytorch3d -c pytorch3d
 cd pytorch3d && pip install -e .
 ```
-  To rebuild after installing from a local clone run, ```rm -rf build/ **/*.so ```then ```pip install -e .```. For more detailed installation introduction, please refer to [PyTorch3D](https://github.com/facebookresearch/pytorch3d) page.
+> To rebuild after installing from a local clone run, ```rm -rf build/ **/*.so ```then ```pip install -e .```. For more detailed installation introduction, please refer to [PyTorch3D](https://github.com/facebookresearch/pytorch3d) page.
 
 * Other Libraries
 ```
