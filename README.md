@@ -102,7 +102,9 @@ We provide material used for MonoSIM simulation, including scene-level and RoI-l
 │   │   │   ├──validation_waymo_to_kitti_id_dict.pkl
 │   │   │   ├──validation.txt
 │   │   │──soft_label_0.zip
+│   ├── waymo
+│   ├── waymo_split
 ```
-
+To conduct Response-Level simulation, ```unzip soft_label_0.zip``` and replace ```waymo/training/label_0```
 
 [pretrained_ckpt](https://pan.baidu.com/s/1kFPkUvc9thE0mgzaJPVLpA?pwd=ljjq)
