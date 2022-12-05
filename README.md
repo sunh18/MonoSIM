@@ -109,12 +109,12 @@ To conduct Response-Level simulation, ```unzip soft_label_0.zip``` to replace ``
 
 # Pretrained checkpoints
 
-| 一个普通标题 | 一个普通标题 | 一个普通标题 |
-| ------ | ------ | ------ |
-| 短文本 | 中等文本 | 稍微长一点的文本 |
-| 稍微长一点的文本 | 短文本 | 中等文本 |
+|  | 一个普通标题 | 一个普通标题 | 一个普通标题 |
+| [pretrained_ckpt](https://pan.baidu.com/s/1kFPkUvc9thE0mgzaJPVLpA?pwd=ljjq) || ------ | ------ | ------ |
+|  | 短文本 | 中等文本 | 稍微长一点的文本 |
+|  | 稍微长一点的文本 | 短文本 | 中等文本 |
 
-[pretrained_ckpt](https://pan.baidu.com/s/1kFPkUvc9thE0mgzaJPVLpA?pwd=ljjq)
+
 
 # Training
 
