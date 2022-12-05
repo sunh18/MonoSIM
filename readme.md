@@ -1,6 +1,6 @@
 # MonoSIM:Simulating Learning Behaviors of Heterogeneous Point Cloud Object Detectors for Monocular 3D Object Detection
+This repository is the official code for paper "MonoSIM: Simulating Learning Behaviors of Heterogeneous Point Cloud Object Detectors for Monocular 3D Object Detection". The paper can be download in .
 
-This repository is modified from Garrick Brazil and Xiaoming Liu's [Monocular 3D Region Proposal Network](https://github.com/garrickbrazil/M3D-RPN) based on their ICCV 2019 arXiv report and JuliaChae's [M3D-RPN-Waymo](https://github.com/JuliaChae/M3D-RPN-Waymo) repository to realize the MonoSIM's function. In addition, we ran the [PV-RCNN](https://github.com/open-mmlab/OpenPCDet)'s code to obtain the necessary data. Please see their project page for more information. 
 
 # Introduction
 
@@ -146,4 +146,4 @@ python create_waymo_eval_bins.py --preds="pred labels path" --gt="gt labels path
 Utilizing [Waymo eval tool](https://github.com/waymo-research/waymo-open-dataset/blob/master/docs/quick_start.md) to get official evaluation results.
 
 # Acknowlegment
-This repo benefits from the excellent work [M3D-RPN](https://github.com/garrickbrazil/M3D-RPN), [M3D-RPN-Waymo](https://github.com/JuliaChae/M3D-RPN-Waymo), [PV-RCNN](https://github.com/open-mmlab/OpenPCDet), [PyTorch3D](https://github.com/facebookresearch/pytorch3d). Please also consider citing them.
+This repository is modified from Garrick Brazil and Xiaoming Liu's [Monocular 3D Region Proposal Network](https://github.com/garrickbrazil/M3D-RPN) based on their ICCV 2019 arXiv report and JuliaChae's [M3D-RPN-Waymo](https://github.com/JuliaChae/M3D-RPN-Waymo) repository to realize the MonoSIM's function. In addition, we ran the [PV-RCNN](https://github.com/open-mmlab/OpenPCDet)'s code to obtain the necessary data. Please see their project page for more information. This repo also benefits from the excellent work [PyTorch3D](https://github.com/facebookresearch/pytorch3d). Please also consider citing them.
