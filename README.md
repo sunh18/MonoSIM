@@ -109,10 +109,12 @@ To conduct Response-Level simulation, ```unzip soft_label_0.zip``` to replace ``
 
 # Pretrained checkpoints
 
-|  [pretrained_ckpt](https://pan.baidu.com/s/1kFPkUvc9thE0mgzaJPVLpA?pwd=ljjq)  | 一个普通标题 | 一个普通标题 | 一个普通标题 |
-|  ------  | ------ | ------ | ------ |
-|  ------  | 短文本 | 中等文本 | 稍微长一点的文本 |
-|  ------  | 稍微长一点的文本 | 短文本 | 中等文本 |
+|  [pretrained_ckpt](https://pan.baidu.com/s/1kFPkUvc9thE0mgzaJPVLpA?pwd=ljjq)  | 3D mAP | 3DmAPH |
+|  ------  | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+| LEVEL_1 IoU=0.7 | 1.60 | 6.08 | 0.40 | 0.01 | 1.59 | 6.02 | 0.39 | 0.01 |
+| LEVEL_2 IoU=0.7 |  |  |  |  |  |  |  |  |
+| LEVEL_1 IoU=0.5 |  |  |  |  |  |  |  |  |
+| LEVEL_2 IoU=0.5 |  |  |  |  |  |  |  |  |
 
 
 
