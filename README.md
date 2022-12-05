@@ -42,26 +42,25 @@ cd lib/nms && python setup.py build_ext --inplace && rm -rf build
 
 # Data setup
 ## Waymo Dataset
-Please download the official [Waymo Open Dataset](https://waymo.com/open/) and organize the downloaded files in any location as follows:
-```
+Please download the official [Waymo Open Dataset](https://waymo.com/open/) and run the Waymo-Kitti adapter to reformat the data appropriately. Clone the repo Waymo-[Kitti-Adapter](https://github.com/JuliaChae/Waymo-Kitti-Adapter) and follow the instructions in its README file. Convert all training, testing and validation files. After runing the adapter, the Waymo data path should look something like with reformatted dataset in the "adapted" folder:
+...
 ├── Waymo
 │   ├── original
+│   │   │──training & testing & validation
+│   ├── adapted
 │   │   │──training
-│   │   │   ├──training_0000
-│   │   │   │   ├─.tfrecord files
-│   │   │   ├──training_0001
-│   │   │   │   ├─.tfrecord files
-│   │   │   ├──...
+│   │   │   ├──calib & velodyne & label_0 & image_0
 │   │   │──validation
-│   │   │   ├──validation_0000
-│   │   │   │   ├─.tfrecord files
-│   │   │   ├──validation_0001
-│   │   │   │   ├─.tfrecord files
-│   │   │   ├──...
+│   │   │   ├──calib & velodyne & label_0 & image_0
 │   │   │──testing
-│   │   │   ├──testing_0000
-│   │   │   │   ├─.tfrecord files
-│   │   │   ├──testing_0001
-│   │   │   │   ├─.tfrecord files
-│   │   │   ├──...
+│   │   │   ├──calib & velodyne & label_0
+```
+Finally, symlink it using the following:
+```
+mkdir data/waymo
+ln -s ${ADAPTED_WAYMO_DIR} data/waymo
+```
+Then use the following scripts to extract the data splits, which use softlinks to the above directory for efficient storage. Modify the camera view argument at the top of the code to correspond to the views that you are working with:
+```
+python data/waymo_split/setup_split.py
 ```
