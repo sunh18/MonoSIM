@@ -111,7 +111,26 @@ To conduct Response-Level simulation, ```unzip soft_label_0.zip``` to replace ``
 We provide [pretrained_ckpt](https://pan.baidu.com/s/1kFPkUvc9thE0mgzaJPVLpA?pwd=ljjq) for downloading. Please place the extracted file under /pretrained_ckpt.
 
 # Training
+We use visdom for visualization and graphs. Optionally, start the server by command line:
+```
+python -m visdom.server -port 8100 -readonly
+```
+The port can be customized in scripts/config files. The training monitor can be viewed at http://localhost:8100
+Training is split into a warmup and main configurations. Review the configurations in scripts/config for details.
+```
+// First train the warmup (without depth-aware)
+python scripts/train_rpn_3d.py --config=waymo_3d_multi_warmup --output=debug --gpu_id=2
 
+// Then train the main experiment (with depth-aware)
+python scripts/train_rpn_3d.py --config=waymo_3d_multi_main --output=debug --gpu_id=2
+```
+If your training is accidentally stopped, you can resume at a checkpoint based on the snapshot with the restore flag. For example to resume training starting at iteration 10k, use the following command.
+```
+python scripts/train_rpn_3d.py --config=waymo_3d_multi_main --restore=10000 --output=debug --gpu_id=2
+```
 
 # Testing
-
+Testing requires paths to the configuration file and model weights, exposed variables near the top scripts/test_rpn_3d.py. To test a configuration and model, simply update the variables and run the test file as below.
+```
+python scripts/test_rpn_3d.py 
+```
