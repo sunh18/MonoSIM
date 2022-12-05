@@ -1,7 +1,7 @@
 # MonoSIM:Simulating Learning Behaviors of Heterogeneous Point Cloud Object Detectors for Monocular 3D Object Detection
 This repository is the official code for paper "MonoSIM: Simulating Learning Behaviors of Heterogeneous Point Cloud Object Detectors for Monocular 3D Object Detection". The paper can be download in .
-![image](https://github.com/sunh18/MonoSIM/MonoSIM.png)
-<img src="https://github.com/sunh18/MonoSIM/MonoSIM.png" width="200" height="200" alt="MonoSIM"/><br/>
+![image](https://github.com/sunh18/MonoSIM/blob/master/MonoSIM.png)
+<img src="https://github.com/sunh18/MonoSIM/blob/master/MonoSIM.png" width="200" height="200" alt="MonoSIM"/><br/>
 
 # Introduction
 
