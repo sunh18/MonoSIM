@@ -139,6 +139,7 @@ Testing requires paths to the configuration file and model weights, exposed vari
 ```
 python scripts/test_rpn_3d.py 
 ```
+After running test_rpn_3d.py, the predicted labels are stored under /eval/data,
 
 # Acknowlegment
 This repo benefits from the excellent work [M3D-RPN](https://github.com/garrickbrazil/M3D-RPN), [M3D-RPN-Waymo](https://github.com/JuliaChae/M3D-RPN-Waymo), [PV-RCNN](https://github.com/open-mmlab/OpenPCDet), [PyTorch3D](https://github.com/facebookresearch/pytorch3d). Please also consider citing them.
