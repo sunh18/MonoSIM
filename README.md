@@ -42,7 +42,7 @@ cd lib/nms && python setup.py build_ext --inplace && rm -rf build
 
 # Data setup
 ## Waymo Dataset
-Please download the official [Waymo Open Dataset](https://waymo.com/open/) and run the Waymo-Kitti adapter to reformat the data appropriately. Clone the repo Waymo-[Kitti-Adapter](https://github.com/JuliaChae/Waymo-Kitti-Adapter) and follow the instructions in its README file. Convert all training, testing and validation files. After runing the adapter, the Waymo data path should look something like with reformatted dataset in the "adapted" folder:
+Please download the official [Waymo Open Dataset](https://waymo.com/open/) and run the Waymo-Kitti adapter to reformat the data appropriately. Clone the repo [Waymo-Kitti-Adapter](https://github.com/JuliaChae/Waymo-Kitti-Adapter) and follow the instructions in its README file. Convert all training, testing and validation files. After runing the adapter, the Waymo data path should look something like with reformatted dataset in the "adapted" folder:
 ```
 ├── Waymo
 │   ├── original
@@ -139,3 +139,6 @@ Testing requires paths to the configuration file and model weights, exposed vari
 ```
 python scripts/test_rpn_3d.py 
 ```
+
+# Acknowlegment
+This repo benefits from the excellent work [M3D-RPN](https://github.com/garrickbrazil/M3D-RPN), [M3D-RPN-Waymo](https://github.com/JuliaChae/M3D-RPN-Waymo), [PV-RCNN](https://github.com/open-mmlab/OpenPCDet), [PyTorch3D](https://github.com/facebookresearch/pytorch3d). Please also consider citing them.
