@@ -107,5 +107,11 @@ We provide material used for MonoSIM simulation, including scene-level and RoI-l
 ```
 To conduct Response-Level simulation, ```unzip soft_label_0.zip``` to replace ```waymo/training/label_0```, and after that, run ```python data/waymo_split/setup_split.py``` again.
 
-# Training and Testing
+# Pretrained checkpoints
 [pretrained_ckpt](https://pan.baidu.com/s/1kFPkUvc9thE0mgzaJPVLpA?pwd=ljjq)
+
+# Training
+
+
+# Testing
+
