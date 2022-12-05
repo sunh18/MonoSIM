@@ -41,3 +41,27 @@ cd lib/nms && python setup.py build_ext --inplace && rm -rf build
 ```
 
 # Data setup
+## Waymo Dataset
+Please download the official [Waymo Open Dataset](https://waymo.com/open/) and organize the downloaded files in any location as follows:
+```
+├── Waymo
+│   ├── original
+│   │   │──training
+│   │   │   ├──training_0000
+│   │   │   │   ├─.tfrecord files
+│   │   │   ├──training_0001
+│   │   │   │   ├─.tfrecord files
+│   │   │   ├──...
+│   │   │──validation
+│   │   │   ├──validation_0000
+│   │   │   │   ├─.tfrecord files
+│   │   │   ├──validation_0001
+│   │   │   │   ├─.tfrecord files
+│   │   │   ├──...
+│   │   │──testing
+│   │   │   ├──testing_0000
+│   │   │   │   ├─.tfrecord files
+│   │   │   ├──testing_0001
+│   │   │   │   ├─.tfrecord files
+│   │   │   ├──...
+```
