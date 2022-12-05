@@ -64,3 +64,6 @@ Then use the following scripts to extract the data splits, which use softlinks t
 ```
 python data/waymo_split/setup_split.py
 ```
+
+## Simulation Material
+We provide material used for MonoSIM simulation, including scene-level and RoI-level point clouds and feature from PV-RCNN network. Limited by the file size, we store it in [pvrcnn_material](https://pan.baidu.com/s/1kFPkUvc9thE0mgzaJPVLpA?pwd=ljjq) for downloading.
