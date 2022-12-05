@@ -66,7 +66,43 @@ python data/waymo_split/setup_split.py
 ```
 
 ## Simulation Material
-We provide material used for MonoSIM simulation, including scene-level and RoI-level point clouds and feature from PV-RCNN network. Limited by the file size, we store it in [pvrcnn_material](https://pan.baidu.com/s/1KPpWg8YN290h1YGEuP2pCg?pwd=nzi7) for downloading.
+We provide material used for MonoSIM simulation, including scene-level and RoI-level point clouds and feature from PV-RCNN network. Limited by the file size, we store it in [pvrcnn_material](https://pan.baidu.com/s/1KPpWg8YN290h1YGEuP2pCg?pwd=nzi7) for downloading. After downloading and unzip, the folder path should look like:
+```
+├── data
+│   ├── kitti_split1
+│   ├── kitti_split2
+│   ├── pvrcnn_material
+│   │   │──render_roi_feature
+│   │   │   ├──000000000000000.pth
+│   │   │   ├──000000000000005.pth
+│   │   │   ├──...
+│   │   │──render_scene_feature
+│   │   │   ├──000000000000000.pth
+│   │   │   ├──000000000000005.pth
+│   │   │   ├──...
+│   │   │──roi_feature
+│   │   │   ├──segment-10017090168044687777_6380_000_6400_000_with_camera_labels_000.pth
+│   │   │   ├──segment-10017090168044687777_6380_000_6400_000_with_camera_labels_005.pth
+│   │   │   ├──...
+│   │   │──roi_pts
+│   │   │   ├──segment-10017090168044687777_6380_000_6400_000_with_camera_labels_000.pth
+│   │   │   ├──segment-10017090168044687777_6380_000_6400_000_with_camera_labels_005.pth
+│   │   │   ├──...
+│   │   │──scene_feature
+│   │   │   ├──segment-10017090168044687777_6380_000_6400_000_with_camera_labels_000.pth
+│   │   │   ├──segment-10017090168044687777_6380_000_6400_000_with_camera_labels_005.pth
+│   │   │   ├──...
+│   │   │──scene_pts
+│   │   │   ├──segment-10017090168044687777_6380_000_6400_000_with_camera_labels_000.pth
+│   │   │   ├──segment-10017090168044687777_6380_000_6400_000_with_camera_labels_005.pth
+│   │   │   ├──...
+│   │   │──waymo_id
+│   │   │   ├──train_waymo_to_kitti_id_dict.pkl
+│   │   │   ├──train.txt
+│   │   │   ├──validation_waymo_to_kitti_id_dict.pkl
+│   │   │   ├──validation.txt
+│   │   │──soft_label_0.zip
+```
 
 
 [pretrained_ckpt](https://pan.baidu.com/s/1kFPkUvc9thE0mgzaJPVLpA?pwd=ljjq)
