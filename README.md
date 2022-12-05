@@ -8,7 +8,7 @@ This repository was used to train and evaluate the MonoSIM monocular detector on
 
 # Usage
 ## Installation
-### Installing MonoSIM vitural environment
+### MonoSIM vitural environment
 This repo is tested on our local environment (python=3.6.13, cuda=10.2, pytorch=1.7.1), and we recommend you to use anaconda to create a vitural environment:
 ```
 conda create -n monosim python=3.6.13
@@ -17,7 +17,7 @@ conda install pytorch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2 cudatoolkit=10
 git clone https://github.com/sunh18/MonoSIM.git
 ```
 
-### Installing PyTorch3D Core Library
+### PyTorch3D Core Library
 We used the [PyTorch3D](https://github.com/facebookresearch/pytorch3d) to build the feature rendering module, so we need to install the corresponding dependencies first:
 ```
 conda install -c fvcore -c iopath -c conda-forge fvcore iopath
@@ -31,4 +31,14 @@ cd pytorch3d && pip install -e .
 ```
 To rebuild after installing from a local clone run, ```rm -rf build/ **/*.so ```then ```pip install -e .```. For more detailed installation introduction, please refer to [PyTorch3D](https://github.com/facebookresearch/pytorch3d) page.
 
-### Installing M3D-RPN 
+### Other Libraries
+```
+cd ..
+conda install  easydict shapely
+conda install -c menpo opencv3=3.1.0 openblas
+conda install cython scikit-image h5py nose pandas protobuf atlas libgfortran jsonpatch
+conda install -c conda-forge visdom
+cd lib/nms && python setup.py build_ext --inplace && rm -rf build
+```
+
+### Data setup
